@@ -37,5 +37,27 @@ function addTextTo(addto, newText) {
 }
 
 function moreBears() {
+  window.animals.src = "http://placebear.com/400/200";
+  window.animals.alt = "A bear.";
+  window.animals.title = "A BEAR!";
+}
 
+function setId(ele, str){
+  ele.id = str;
+  return ele;
+}
+
+function setClass(ele, str){
+    ele.className = str;
+  return ele;
+}
+
+function addAClass(ele, str){
+      ele.classList.add(str);
+  return ele;
+}
+
+function removeAClass(ele, str){
+    ele.classList.remove(str);
+  return ele;
 }
